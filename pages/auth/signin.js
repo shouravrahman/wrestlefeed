@@ -8,7 +8,8 @@ import {
 	csrfToken,
 } from 'next-auth/react'
 
-export default function SignIn({ providers, csrfToken }) {
+export default function SignIn({ e, providers, csrfToken }) {
+	e.preventDefault()
 	return (
 		<div className=' flex items-center h-full w-full max-w-xs mr-auto ml-auto'>
 			<div className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'>
